@@ -4,20 +4,20 @@
 void Water::step(Map &map) {
     if(m_stepped) return;
     if(m_y+1<mapSize) {
-        if (map.getElement(m_x, m_y + 1)->getType() == ElementType::VOID) {
+        if (canStepTo(map.getElement(m_x, m_y + 1))) {
             map.swapElements(m_x, m_y, m_x, m_y + 1);
             m_stepped = true;
             return;
         }
         if (m_x - 1 >= 0) {
-            if (map.getElement(m_x - 1, m_y + 1)->getType() == ElementType::VOID) {
+            if (canStepTo(map.getElement(m_x - 1, m_y + 1))) {
                 map.swapElements(m_x, m_y, m_x - 1, m_y + 1);
                 m_stepped = true;
                 return;
             }
         }
         if (m_x + 1 < mapSize) {
-            if (map.getElement(m_x + 1, m_y + 1)->getType() == ElementType::VOID) {
+            if (canStepTo(map.getElement(m_x + 1, m_y + 1))) {
                 map.swapElements(m_x, m_y, m_x + 1, m_y + 1);
                 m_stepped = true;
                 return;
@@ -25,14 +25,14 @@ void Water::step(Map &map) {
         }
     }
     if (m_x - 1 >= 0) {
-        if (map.getElement(m_x - 1, m_y)->getType() == ElementType::VOID) {
+        if (canStepTo(map.getElement(m_x - 1, m_y))) {
             map.swapElements(m_x, m_y, m_x - 1, m_y);
             m_stepped = true;
             return;
         }
     }
     if (m_x + 1 < mapSize) {
-        if (map.getElement(m_x + 1, m_y)->getType() == ElementType::VOID) {
+        if (canStepTo(map.getElement(m_x + 1, m_y))) {
             map.swapElements(m_x, m_y, m_x + 1, m_y);
             m_stepped = true;
             return;
