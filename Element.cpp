@@ -19,9 +19,7 @@ void Element::draw(sf::RenderWindow &window) {
     int ys = screenHeight/mapSize;
     rect.setSize(sf::Vector2f(xs, ys));
     rect.setPosition(xs*m_x, ys*m_y);
-    if(m_type == VOID) rect.setFillColor(sf::Color::Black);
-    else if(m_type == SAND) rect.setFillColor(sf::Color::Yellow);
-    else if(m_type == WATER) rect.setFillColor(sf::Color::Blue);
+    rect.setFillColor(m_color);
     window.draw(rect);
 }
 

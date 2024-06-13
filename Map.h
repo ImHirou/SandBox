@@ -23,6 +23,7 @@ public:
     void setElement(Element* element, int x, int y);
 
     void swapElements(int x1 ,int y1, int x2, int y2);
+    void deleteElement(int x, int y);
 
     void draw(sf::RenderWindow& window);
     void tick();

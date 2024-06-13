@@ -1,3 +1,4 @@
+#include <iostream>
 #include "Map.h"
 
 Map::Map() {
@@ -13,7 +14,9 @@ Element** Map::getElements() { return m_elements; }
 
 Element* Map::getElement(int x, int y) { return m_elements[x+y*mapSize]; }
 void Map::setElement(Element *element, int x, int y) {
-    m_elements[x+y*mapSize] = element;
+    int index = x + y * mapSize;
+    delete m_elements[index];
+    m_elements[index] = element;
 }
 
 void Map::swapElements(int x1, int y1, int x2, int y2) {
@@ -22,8 +25,14 @@ void Map::swapElements(int x1, int y1, int x2, int y2) {
     temp->setY(y2);
     m_elements[x2+y2*mapSize]->setX(x1);
     m_elements[x2+y2*mapSize]->setY(y1);
-    setElement(m_elements[x2+y2*mapSize], x1, y1);
-    setElement(temp, x2, y2);
+    //setElement(m_elements[x2+y2*mapSize], x1, y1);
+    //setElement(temp, x2, y2);
+    m_elements[x1+y1*mapSize] = m_elements[x2+y2*mapSize];
+    m_elements[x2+y2*mapSize] = temp;
+}
+void Map::deleteElement(int x, int y) {
+    delete m_elements[x+y*mapSize];
+    m_elements[x+y*mapSize] = new Element(x, y, Element::VOID);
 }
 
 void Map::draw(sf::RenderWindow &window) {

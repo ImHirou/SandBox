@@ -17,7 +17,9 @@ add_executable(SandBox main.cpp
         Sand.h
         definitions.h
         Water.cpp
-        Water.h)
+        Water.h
+        Smoke.cpp
+        Smoke.h)
 
 target_link_libraries(SandBox sfml-system)
 target_link_libraries(SandBox sfml-graphics)

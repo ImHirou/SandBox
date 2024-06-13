@@ -2,6 +2,7 @@
 #define SANDBOX_ELEMENT_H
 
 #include <SFML/Graphics/RenderWindow.hpp>
+#include <SFML/Graphics/Color.hpp>
 
 class Map;
 
@@ -17,11 +18,12 @@ public:
 protected:
     int m_x;
     int m_y;
-    bool m_stepped;
+    bool m_stepped = false;
+    sf::Color m_color;
     ElementType m_type;
 public:
-    Element() : m_x(-1), m_y(-1), m_type(VOID) {}
-    Element(int x, int y, ElementType type) : m_x(x), m_y(y), m_type(type) {}
+    Element() : m_x(-1), m_y(-1), m_color(sf::Color::Black), m_type(VOID) {}
+    Element(int x, int y, ElementType type) : m_x(x), m_y(y), m_color(sf::Color::Black), m_type(type) {}
 
     virtual ~Element() = default;
 

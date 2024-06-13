@@ -26,16 +26,18 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5879ba6e-d82f-4a65-a456-04bf32e8d653" name="Changes" comment="last git ignore omg">
+    <list default="true" id="5879ba6e-d82f-4a65-a456-04bf32e8d653" name="Changes" comment="Refactor">
+      <change afterPath="$PROJECT_DIR$/Smoke.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Smoke.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Element.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Element.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Element.h" beforeDir="false" afterPath="$PROJECT_DIR$/Element.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Map.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Map.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Map.h" beforeDir="false" afterPath="$PROJECT_DIR$/Map.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Sand.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Sand.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Water.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Water.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sand.h" beforeDir="false" afterPath="$PROJECT_DIR$/Sand.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Water.h" beforeDir="false" afterPath="$PROJECT_DIR$/Water.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/definitions.h" beforeDir="false" afterPath="$PROJECT_DIR$/definitions.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -49,6 +51,7 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="ProjectApplicationVersion">
     <option name="ide" value="CLion" />
@@ -140,7 +143,7 @@
       <option name="presentableId" value="Default" />
       <updated>1718269590127</updated>
       <workItem from="1718269591994" duration="6415000" />
-      <workItem from="1718276313960" duration="6686000" />
+      <workItem from="1718276313960" duration="11029000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -182,7 +185,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718277521097</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Refactor">
+      <option name="closed" value="true" />
+      <created>1718298295100</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1718298295100</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -210,6 +221,7 @@
     <MESSAGE value="git ignore" />
     <MESSAGE value="some adds" />
     <MESSAGE value="last git ignore omg" />
-    <option name="LAST_COMMIT_MESSAGE" value="last git ignore omg" />
+    <MESSAGE value="Refactor" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactor" />
   </component>
 </project>
