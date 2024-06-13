@@ -27,6 +27,8 @@ public:
     void draw(sf::RenderWindow& window);
     void tick();
 
+    static bool inMapBound(int x, int y);
+
 };
 
 

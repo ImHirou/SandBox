@@ -1,5 +1,6 @@
 #include <SFML/Graphics.hpp>
 #include "Element.h"
+#include "Map.h"
 #include "definitions.h"
 
 int Element::getX() const { return m_x; }
@@ -18,14 +19,19 @@ void Element::draw(sf::RenderWindow &window) {
     int ys = screenHeight/mapSize;
     rect.setSize(sf::Vector2f(xs, ys));
     rect.setPosition(xs*m_x, ys*m_y);
-    if(m_type == VOID) {
-        rect.setFillColor(sf::Color::Black);
-    }
-    else if(m_type == SAND) {
-        rect.setFillColor(sf::Color::Yellow);
-    }
+    if(m_type == VOID) rect.setFillColor(sf::Color::Black);
+    else if(m_type == SAND) rect.setFillColor(sf::Color::Yellow);
+    else if(m_type == WATER) rect.setFillColor(sf::Color::Blue);
     window.draw(rect);
 }
 
 void Element::step(Map &map) {}
-bool Element::canStepTo(Element* element) {}
+void Element::stepTo(Map &map, int x, int y) {
+    if(!Map::inMapBound(x, y)) return;
+    if(m_stepped) return;
+    if(canStepTo(map.getElement(x, y))) {
+        m_stepped = true;
+        map.swapElements(m_x, m_y, x, y);
+    }
+}
+bool Element::canStepTo(Element* element) { return false; }

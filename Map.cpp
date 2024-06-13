@@ -47,3 +47,8 @@ void Map::tick() {
     }
 }
 
+bool Map::inMapBound(int x, int y) {
+    return  (x>=0 && x<mapSize &&
+            y>=0 && y<mapSize);
+}
+

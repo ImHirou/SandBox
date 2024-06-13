@@ -4,7 +4,8 @@
 #include "Element.h"
 
 class Water : public Element{
-
+private:
+    int m_dir=1;
 public:
     Water() : Element(-1, -1, ElementType::WATER) {}
     Water(int x, int y) : Element(x, y, ElementType::WATER) {}

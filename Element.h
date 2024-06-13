@@ -36,6 +36,7 @@ public:
     ElementType getType() const;
 
     virtual void step(Map& map);
+    void stepTo(Map& map, int x, int y);
     virtual bool canStepTo(Element* element);
     virtual void draw(sf::RenderWindow& window);
 

@@ -26,8 +26,17 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5879ba6e-d82f-4a65-a456-04bf32e8d653" name="Changes" comment="git ignore">
+    <list default="true" id="5879ba6e-d82f-4a65-a456-04bf32e8d653" name="Changes" comment="last git ignore omg">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Element.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Element.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Element.h" beforeDir="false" afterPath="$PROJECT_DIR$/Element.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Map.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Map.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Map.h" beforeDir="false" afterPath="$PROJECT_DIR$/Map.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sand.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Sand.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Water.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Water.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Water.h" beforeDir="false" afterPath="$PROJECT_DIR$/Water.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/definitions.h" beforeDir="false" afterPath="$PROJECT_DIR$/definitions.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,6 +76,7 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "structure.view.defaults.are.configured": "true",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -130,7 +140,7 @@
       <option name="presentableId" value="Default" />
       <updated>1718269590127</updated>
       <workItem from="1718269591994" duration="6415000" />
-      <workItem from="1718276313960" duration="1021000" />
+      <workItem from="1718276313960" duration="6686000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -156,7 +166,23 @@
       <option name="project" value="LOCAL" />
       <updated>1718277227834</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="some adds">
+      <option name="closed" value="true" />
+      <created>1718277390746</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1718277390746</updated>
+    </task>
+    <task id="LOCAL-00005" summary="last git ignore omg">
+      <option name="closed" value="true" />
+      <created>1718277521097</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1718277521097</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -168,9 +194,22 @@
     <isAutomaticFoundErrors value="true" />
     <isAutomaticFoundErrors value="true" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
     <MESSAGE value="git ignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="git ignore" />
+    <MESSAGE value="some adds" />
+    <MESSAGE value="last git ignore omg" />
+    <option name="LAST_COMMIT_MESSAGE" value="last git ignore omg" />
   </component>
 </project>

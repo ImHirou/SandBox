@@ -1,28 +1,16 @@
+#include <cstdlib>
 #include "Sand.h"
 #include "Map.h"
 
 void Sand::step(Map &map) {
     if(m_stepped) return;
-    if(m_y+1>=mapSize) return;
-    if(canStepTo(map.getElement(m_x, m_y+1))) {
-        map.swapElements(m_x, m_y, m_x, m_y+1);
-        m_stepped = true;
-        return;
-    }
-    if(m_x-1>=0) {
-        if (canStepTo(map.getElement(m_x - 1, m_y + 1))) {
-            map.swapElements(m_x, m_y, m_x - 1, m_y + 1);
-            m_stepped = true;
-            return;
-        }
-    }
-    if(m_x+1<mapSize) {
-        if (canStepTo(map.getElement(m_x + 1, m_y + 1))) {
-            map.swapElements(m_x, m_y, m_x + 1, m_y + 1);
-            m_stepped = true;
-            return;
-        }
-    }
+
+    stepTo(map, m_x, m_y+1);
+    int diff=1;
+    if(rand() % 10 < 5) diff=-1;
+    stepTo(map, m_x+diff, m_y+1);
+    stepTo(map, m_x+diff, m_y+1);
+
     m_stepped = true;
 }
 
