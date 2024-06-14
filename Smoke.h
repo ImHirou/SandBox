@@ -9,8 +9,7 @@ private:
 public:
     Smoke() : Element(-1, -1, ElementType::SMOKE), m_lifeTime(160 + rand() % 80) {}
     Smoke(int x, int y) : Element(x, y, ElementType::SMOKE), m_lifeTime(160 + rand() % 80) {
-        int rgb = 30 + rand() % 30;
-        m_color = sf::Color(rgb,rgb,rgb);
+        m_color = sf::Color(m_lifeTime, m_lifeTime, m_lifeTime);
     }
 
     virtual void step(Map &map);

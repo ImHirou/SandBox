@@ -8,9 +8,10 @@ void Smoke::step(Map &map) {
         map.deleteElement(m_x, m_y);
         return;
     }
+    m_color = sf::Color(m_lifeTime, m_lifeTime, m_lifeTime);
     if(rand() % 10 < 3) stepTo(map, m_x, m_y-1);
     int diff=1;
-    if(rand() % 10 < 5) diff=-1;
+    if(rand() % 2 == 1) diff=-1;
     stepTo(map, m_x+diff, m_y-1);
     stepTo(map, m_x+diff, m_y-1);
     stepTo(map, m_x+diff, m_y);

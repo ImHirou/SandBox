@@ -11,8 +11,6 @@ void Water::step(Map &map) {
 
     stepTo(map, m_x, m_y+1);
     stepTo(map, m_x+m_dir, m_y+1);
-    stepTo(map, m_x+m_dir, m_y+1);
-    stepTo(map, m_x+m_dir, m_y);
     stepTo(map, m_x+m_dir, m_y);
 
     if(!m_stepped) m_dir *= -1;
