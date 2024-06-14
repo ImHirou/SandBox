@@ -37,6 +37,8 @@ int main() {
                     spawner.setType(Element::WATER);
                 if(event.key.code == sf::Keyboard::Num3)
                     spawner.setType(Element::SMOKE);
+                if(event.key.code == sf::Keyboard::Num4)
+                    spawner.setType(Element::FIRE);
             }
         }
 

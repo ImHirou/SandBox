@@ -13,6 +13,7 @@ public:
         SAND,
         WATER,
         SMOKE,
+        FIRE,
         TOTAL_ELEMENTS
     };
 protected:

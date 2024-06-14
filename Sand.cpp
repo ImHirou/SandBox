@@ -16,6 +16,7 @@ void Sand::step(Map &map) {
 
 bool Sand::canStepTo(Element* element) {
     return element->getType() == ElementType::VOID ||
-            element->getType() == ElementType::WATER ||
-            element->getType() == ElementType::SMOKE;
+           element->getType() == ElementType::WATER ||
+           element->getType() == ElementType::SMOKE ||
+           element->getType() == ElementType::FIRE;
 }

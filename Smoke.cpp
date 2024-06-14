@@ -21,5 +21,6 @@ void Smoke::step(Map &map) {
 
 bool Smoke::canStepTo(Element *element) {
     return element->getType() == ElementType::VOID ||
-            element->getType() == ElementType::WATER;
+            element->getType() == ElementType::WATER ||
+            element->getType() == ElementType::FIRE;
 }
