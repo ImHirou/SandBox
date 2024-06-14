@@ -6,9 +6,10 @@
 class Spawner {
 private:
     Element::ElementType m_type;
+    bool m_adder=false;
 public:
     Spawner() : m_type(Element::VOID) {}
-    Spawner(Element::ElementType type) : m_type(type) {}
+    Spawner(Element::ElementType type, bool adder) : m_type(type), m_adder(adder) {}
 
     void setType(Element::ElementType type);
 

@@ -19,6 +19,7 @@ public:
 protected:
     int m_x;
     int m_y;
+    int m_temperature = 0;
     bool m_stepped = false;
     sf::Color m_color;
     ElementType m_type;
@@ -32,11 +33,13 @@ public:
     void setY(int y);
     void setStepped(bool s);
     void setType(ElementType type);
+    void setTemperature(int t);
 
     int getX() const;
     int getY() const;
     bool isStepped() const;
     ElementType getType() const;
+    int getTemperature() const;
 
     virtual void step(Map& map);
     void stepTo(Map& map, int x, int y);

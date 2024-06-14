@@ -2,6 +2,7 @@
 #include "Map.h"
 
 void Smoke::step(Map &map) {
+    Element::step(map);
     if(m_stepped) return;
     if(m_lifeTime <=0) {
         map.deleteElement(m_x, m_y);

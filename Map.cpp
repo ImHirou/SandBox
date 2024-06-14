@@ -18,6 +18,15 @@ void Map::setElement(Element *element, int x, int y) {
     delete m_elements[index];
     m_elements[index] = element;
 }
+void Map::addElement(Element *element, int x, int y) {
+    int index = x + y * mapSize;
+    if(m_elements[index]->getType() == Element::ElementType::VOID) {
+        delete m_elements[index];
+        m_elements[index] = element;
+    } else {
+        delete element;
+    }
+}
 
 void Map::swapElements(int x1, int y1, int x2, int y2) {
     Element* temp = m_elements[x1+y1*mapSize];

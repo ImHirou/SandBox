@@ -14,7 +14,7 @@ int main() {
     window.setFramerateLimit(60);
 
     Map map;
-    Spawner spawner;
+    Spawner spawner(Element::ElementType::VOID, true);
     int radius = 0;
     bool isPressed = false;
 

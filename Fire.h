@@ -5,10 +5,10 @@
 
 class Fire : public Element{
 private:
-    int m_temperature;
 public:
     Fire() : Element(-1, -1, ElementType::FIRE) {}
-    Fire(int x, int y) : Element(x, y, ElementType::FIRE), m_temperature(160 + rand() % 40) {
+    Fire(int x, int y) : Element(x, y, ElementType::FIRE) {
+        m_temperature = 160 + rand() % 40;
         m_color = sf::Color(m_temperature, 10, 10);
     }
 
