@@ -3,9 +3,7 @@
 #include <cstdlib>
 #include <ctime>
 #include "definitions.h"
-#include "Sand.h"
-#include "Water.h"
-#include "Smoke.h"
+#include "Spawner.h"
 #include "Map.h"
 
 int main() {
@@ -16,9 +14,9 @@ int main() {
     window.setFramerateLimit(60);
 
     Map map;
-    bool isPressed = false;
+    Spawner spawner;
     int radius = 0;
-    int type = 0;
+    bool isPressed = false;
 
     while(window.isOpen()) {
 
@@ -34,26 +32,19 @@ int main() {
                 if(event.key.code == sf::Keyboard::D)
                     radius++;
                 if(event.key.code == sf::Keyboard::Num1)
-                    type = 1;
+                    spawner.setType(Element::SAND);
                 if(event.key.code == sf::Keyboard::Num2)
-                    type = 2;
+                    spawner.setType(Element::WATER);
                 if(event.key.code == sf::Keyboard::Num3)
-                    type = 3;
+                    spawner.setType(Element::SMOKE);
             }
         }
 
         if(isPressed) {
             sf::Vector2i pos = sf::Mouse::getPosition(window);
-            int mx = pos.x/(screenWidth/mapSize);
-            int my = pos.y/(screenWidth/mapSize);
-            for(int x=mx-radius; x<=mx+radius; ++x) {
-                for(int y=my-radius; y<=my+radius; ++y) {
-                    if(!Map::inMapBound(x, y)) continue;
-                    if(type == 1) map.setElement(new Sand(x, y), x, y);
-                    else if(type == 2) map.setElement(new Water(x, y), x, y);
-                    else if(type == 3) map.setElement(new Smoke(x, y), x, y);
-                }
-            }
+            int x = pos.x/(screenWidth/mapSize);
+            int y = pos.y/(screenWidth/mapSize);
+            spawner.spawn(map, x, y, radius);
         }
 
         window.clear(sf::Color::Black);
