@@ -12,7 +12,9 @@ Map::Map() {
 
 Element** Map::getElements() { return m_elements; }
 
-Element* Map::getElement(int x, int y) { return m_elements[x+y*mapSize]; }
+Element* Map::getElement(int x, int y) {
+    return m_elements[x+y*mapSize];
+}
 void Map::setElement(Element *element, int x, int y) {
     int index = x + y * mapSize;
     delete m_elements[index];

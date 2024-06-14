@@ -12,8 +12,10 @@ public:
     Spawner(Element::ElementType type, bool adder) : m_type(type), m_adder(adder) {}
 
     void setType(Element::ElementType type);
+    void setAdder(bool b);
 
     Element::ElementType getType() const;
+    bool getAdder() const;
 
     void spawn(Map& map, int x, int y, int radius);
 

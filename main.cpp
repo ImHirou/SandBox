@@ -14,7 +14,7 @@ int main() {
     window.setFramerateLimit(60);
 
     Map map;
-    Spawner spawner(Element::ElementType::VOID, true);
+    Spawner spawner(Element::ElementType::VOID, false);
     int radius = 0;
     bool isPressed = false;
 
@@ -29,6 +29,8 @@ int main() {
             if(event.type == sf::Event::KeyPressed) {
                 if(event.key.code == sf::Keyboard::A)
                     if(radius>0) radius--;
+                if(event.key.code == sf::Keyboard::S)
+                    spawner.setAdder(!spawner.getAdder());
                 if(event.key.code == sf::Keyboard::D)
                     radius++;
                 if(event.key.code == sf::Keyboard::Num1)
@@ -39,6 +41,8 @@ int main() {
                     spawner.setType(Element::SMOKE);
                 if(event.key.code == sf::Keyboard::Num4)
                     spawner.setType(Element::FIRE);
+                if(event.key.code == sf::Keyboard::Num5)
+                    spawner.setType(Element::STONE);
             }
         }
 

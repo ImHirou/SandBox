@@ -3,7 +3,6 @@
 #include "Map.h"
 
 void Sand::step(Map &map) {
-    Element::step(map);
     if(m_stepped) return;
 
     stepTo(map, m_x, m_y+1);

@@ -9,8 +9,6 @@ void Water::step(Map &map) {
         return;
     }
 
-    //m_color = sf::Color(m_temperature, m_temperature, m_temperature);
-
     stepTo(map, m_x, m_y+1);
     stepTo(map, m_x+m_dir, m_y+1);
     stepTo(map, m_x+m_dir, m_y+1);

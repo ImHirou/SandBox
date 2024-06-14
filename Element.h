@@ -14,6 +14,7 @@ public:
         WATER,
         SMOKE,
         FIRE,
+        STONE,
         TOTAL_ELEMENTS
     };
 protected:

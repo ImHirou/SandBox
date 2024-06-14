@@ -23,7 +23,9 @@ add_executable(SandBox main.cpp
         Spawner.cpp
         Spawner.h
         Fire.cpp
-        Fire.h)
+        Fire.h
+        Stone.cpp
+        Stone.h)
 
 target_link_libraries(SandBox sfml-system)
 target_link_libraries(SandBox sfml-graphics)
