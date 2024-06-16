@@ -4,7 +4,7 @@
 
 void Water::step(Map &map) {
     if(m_stepped) return;
-    if(m_temperature >= 60) {
+    if(m_temperature >= 80) {
         map.setElement(new Smoke(m_x, m_y), m_x, m_y);
         return;
     }

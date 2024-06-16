@@ -1,11 +1,13 @@
 #include "Smoke.h"
 #include "Map.h"
+#include "Water.h"
 
 void Smoke::step(Map &map) {
     Element::step(map);
     if(m_stepped) return;
     if(m_lifeTime <=0) {
         map.deleteElement(m_x, m_y);
+        map.setElement(new Water(m_x, m_y), m_x, m_y);
         return;
     }
     m_color = sf::Color(m_lifeTime, m_lifeTime, m_lifeTime);

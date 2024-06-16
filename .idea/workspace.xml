@@ -26,12 +26,10 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5879ba6e-d82f-4a65-a456-04bf32e8d653" name="Changes" comment="Stone Element">
+    <list default="true" id="5879ba6e-d82f-4a65-a456-04bf32e8d653" name="Changes" comment="Remove black fire color">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fire.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Fire.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Element.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Element.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Smoke.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Smoke.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smoke.h" beforeDir="false" afterPath="$PROJECT_DIR$/Smoke.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Water.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Water.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,11 +76,6 @@
 }</component>
   <component name="RunManager" selected="CMake Application.SandBox">
     <configuration name="SandBox" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="SandBox" TARGET_NAME="SandBox" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="SandBox" RUN_TARGET_NAME="SandBox">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -140,7 +133,8 @@
       <workItem from="1718355508342" duration="4135000" />
       <workItem from="1718363660742" duration="4000" />
       <workItem from="1718365627288" duration="3151000" />
-      <workItem from="1718381866882" duration="3152000" />
+      <workItem from="1718381866882" duration="4145000" />
+      <workItem from="1718552634296" duration="922000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -230,7 +224,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718367242651</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Remove black fire color">
+      <option name="closed" value="true" />
+      <created>1718399052692</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1718399052693</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -264,6 +266,7 @@
     <MESSAGE value="Fire Element" />
     <MESSAGE value="General adds" />
     <MESSAGE value="Stone Element" />
-    <option name="LAST_COMMIT_MESSAGE" value="Stone Element" />
+    <MESSAGE value="Remove black fire color" />
+    <option name="LAST_COMMIT_MESSAGE" value="Remove black fire color" />
   </component>
 </project>

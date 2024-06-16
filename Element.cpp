@@ -33,8 +33,14 @@ void Element::step(Map &map) {
             if(!Map::inMapBound(x, y)) continue;
             if(map.getElement(x, y)->getType() == ElementType::VOID) continue;
             Element* el = map.getElement(x, y);
-            el->setTemperature(el->getTemperature()+m_temperature/8);
-            m_temperature-=m_temperature/8;
+            if(map.getElement(x,y) ->getType() == ElementType::SAND) {
+                el->setTemperature(el->getTemperature()+m_temperature/10);
+                m_temperature-=m_temperature/8;
+            }
+            if(map.getElement(x,y) ->getType() == ElementType::WATER) {
+                el->setTemperature(el->getTemperature()+m_temperature/4);
+                m_temperature-=m_temperature/5;
+            }
         }
     }
 }
